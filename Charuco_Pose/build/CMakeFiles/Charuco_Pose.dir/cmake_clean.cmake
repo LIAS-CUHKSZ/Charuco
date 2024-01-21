@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Charuco_Pose.dir/src/detect_Charuco_pose.cpp.o"
+  "CMakeFiles/Charuco_Pose.dir/src/detect_Charuco_pose.cpp.o.d"
   "Charuco_Pose"
   "Charuco_Pose.pdb"
 )

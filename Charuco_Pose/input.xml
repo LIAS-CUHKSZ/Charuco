@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<opencv_storage>
+  <!-- Number of inner corners per a item row and column. (square, circle) -->
+  <BoardSize_Width>12</BoardSize_Width>
+  <BoardSize_Height>9</BoardSize_Height>
+  <!-- The size of a square in some user defined metric system (pixel, millimeter)-->
+  <Square_Size>30</Square_Size>
+  <Marker_Size>22.5</Marker_Size>
+  <!-- The type of dictrionary -->
+  <ArUco_Dict_Name>DICT_5X5_100</ArUco_Dict_Name>
+  <!-- Input and Output Files -->
+  <Images_xml>"Images/list.xml"</Images_xml>
+  <Calib_Filename>"64652_cali.xml"</Calib_Filename>
+  <Write_outputFileName>"poses.txt"</Write_outputFileName>
+</opencv_storage>

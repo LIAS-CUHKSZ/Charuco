@@ -1,0 +1,3 @@
+/home/leoj/workspaces/Charuco/Charuco_Cali/build/CMakeFiles/camera_calibration.dir
+/home/leoj/workspaces/Charuco/Charuco_Cali/build/CMakeFiles/edit_cache.dir
+/home/leoj/workspaces/Charuco/Charuco_Cali/build/CMakeFiles/rebuild_cache.dir

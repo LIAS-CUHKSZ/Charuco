@@ -38,8 +38,9 @@ int main(int argc, char **argv)
     float markerSize;         // The size of a marker in your defined unit (point, millimeter,etc).
     string arucoDictName;     // The Name of ArUco dictionary which you use in ChArUco pattern
     string arucoDictFileName; // The Name of file which contains ArUco dictionary for ChArUco pattern
-    string input;
+    string images_xml;
     string output;
+    string calib_filename;
 
     // read xml file
     string filename = argv[1];
@@ -49,8 +50,9 @@ int main(int argc, char **argv)
     fs_i["Square_Size"]>>squareSize;
     fs_i["Marker_Size"]>>markerSize;
     fs_i["ArUco_Dict_Name"]>>arucoDictName;
-    fs_i["Input"]>>input;
+    fs_i["Images_xml"]>>images_xml;
     fs_i["Write_outputFileName"]>>output;
+    fs_i["Calib_Filename"]>>calib_filename;
     fs_i.release();
 
     // create aruco board
@@ -60,12 +62,11 @@ int main(int argc, char **argv)
     
     // read camera parameters
     cv::Mat cameraMatrix, distCoeffs;
-    std::string calib_filename = "calib.txt";
     bool readOk = readCameraParameters(calib_filename, cameraMatrix, distCoeffs);
     // read names of a list of images from the input xml file
     vector<string> imageList;
-    readStringList(input, imageList);
-    // open output files
+    readStringList(images_xml, imageList);
+    // open output fes
     FileStorage fs_o(output, FileStorage::WRITE);
     for (const auto &imageName : imageList)
     {
